@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>place my order now!</title>
+  </head>
+  <body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href='home'><u><i>derik backies</u></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home"><u><i>Home</u></i></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/about"><u><i>ABOUT US</u></i></a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link" href="services"><u><i>SERVICES</u><i/></a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="reciveorder"><u><i>ORDER NOW</u></i></a>
+                </li>
+
+            </ul>
+
+            </div>
+        </div>
+        </nav>
+<center>
+
+<H1><i><u>HAPPY TO SEE YOU HERE.. REGISTER YOUR ORDER NOW :-)</i></u></H1>
+
+<!--action="placeorder"-->
+
+<form method="POST" action="/placeorder"> 
+{% csrf_token %}
+  <div class="col-md-4">
+    <label class="form-label"><i><u>First name</u></i></label>
+    <input type="text" name="name" class="form-control" id="validationCustom01" placeholde="Mark" required>
+
+  </div>
+  <div class="col-md-4"> 
+   <label for="validationCustom04"  class="form-label"><i><u>catogary</i></u></label>
+    <select class="form-select" name="state" id="validationCustom04" required>
+      <option selected disabled value="">Cake/ice-cream/pastry</option>
+      <option>cake</option>
+      <option>icecream</option>
+      <option>pastry</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  </div>
+
+  <div class="col-md-4">
+    <label for="validationCustomUsername"  class="form-label"><i><u>itemcode</i></u></label>
+    <input type="text" name="itemcode" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+  
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03"  class="form-label"><i><u>address</i></u></label>
+    <input type="text" name="city" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid address.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04"  class="form-label"><i><u>city</i></u></label>
+    <select class="form-select" name="state" id="validationCustom04" required>
+      <option selected disabled value="">we provide services in..</option>
+      <option>indore</option>
+      <option>ujjan</option>
+      <option>bhopal</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05"   class="form-label"></i></u>Zip</i></u></label>
+    <input type="text" name="zipcode" class="form-control" >
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        <i><b><ul> click to Register my order now</ i></b></ul>
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <input type="submit" value="place ordderr">
+  </div>
+</form>
+
+</center>    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
